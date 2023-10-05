@@ -56,22 +56,86 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
-
+    div #flexContainer1 {
+      display: flex;
+      justify-content: space-around;
+    }
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
-
+    div #flexContainer2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
-
+    div #flexContainer3 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
     /* 👉 Task 4 - [HINT] the flex items need a new order */
-
+    div #flexContainer4 {
+      display: flex;
+      justify-content: space-around;
+      align-items: end;
+    }
     /* 👉 Task 5 - [HINT] research align-self */
-
+    div #flexContainer5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #flexContainer5 .flexItem:nth-child(2) {
+      align-self: center;
+    }
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
-
+    div #flexContainer6 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+    }
+    #flexContainer6 .flexItem:nth-child(3) {
+      align-self: flex-start;
+    }
+    #flexContainer6 .flexItem:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(1) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
     /* 👉 Task 7 - [HINT] research flex-grow */
-
+    div #flexContainer7 {
+      display: flex;
+    }
+    #flexContainer7 .flexItem:nth-child(2) {
+      flex-grow: .5;
+    }
+    #flexContainer7 .flexItem:nth-child(3) {
+      flex-grow: 1;
+    }
     /* 👉 Task 8 - [HINT] you got this! */
-
-
+    div #flexContainer8 {
+      display: flex;
+      justify-content: space-between;
+    }
+    #flexContainer8 .flexItem:nth-child(1) {
+      display: flex;
+      justify-content: flex-end;
+    }
+    #flexContainer8 .flexItem:nth-child(2) {
+      display: flex;
+      align-self: center;
+    }
+    #flexContainer8 .flexItem:nth-child(3) {
+      display: flex;
+      align-self: flex-end;
+      justify-content: flex-start;
+    }
     /*
     👉 Part 2 of 2 👈
     Revisit the Module Project of HTML & CSS II and re-style it using Flexbox.
